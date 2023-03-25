@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>입력값 검토하기</title>
+</head>
+<body>
+	<form method="POST">
+		{% csrf_token %}
+		<label for="input_value">입력값:</label>
+		<input type="text" name="input_value" id="input_value">
+		<button type="submit">검토</button>
+	</form>
+	<h1>{{checked}}</h1>
+</body>
+</html>
