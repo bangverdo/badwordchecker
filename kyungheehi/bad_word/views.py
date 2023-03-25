@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 
 # openai api key 설정
-openai.api_key = "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"
+openai.api_key = "여기 설정하세여"
 
 # 입력값이 나쁜말인지 판단하는 함수
 def is_bad_word(input_text):
@@ -16,7 +16,7 @@ def is_bad_word(input_text):
         model="text-davinci-003",
         prompt=f"느금마,ㄴㄱㅁ,시1발,시2발,시빨,븅신,병1신,병형신,ㅄ,ㅂㅅ,ㅅㅂ,장애년,장애새끼,tlqkf,qudtls is bad word. ㅋㅋㅋ,ㅋㅋ,ㅋㅋㅋㅋ is not bad word. Is the following text bad? {input_text}",
         temperature=0.5,
-        max_tokens=100,
+        max_tokens=200,
         n=1,
         stop=None,
         frequency_penalty=0,
